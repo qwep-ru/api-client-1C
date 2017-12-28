@@ -39,13 +39,14 @@
 		</Metadata>
 		<Metadata name="CommonForm.QWEPКонстанты" id="51ebef3c-4eb6-4f5f-9315-b079fa47c5b2" configVersion="5fa1cf788a279b4288e0be92ba0d47ab00000000"/>
 		<Metadata name="CommonForm.QWEPКонстанты.Form" id="51ebef3c-4eb6-4f5f-9315-b079fa47c5b2.0" configVersion="49632f6970c2464482789f94e4b95df400000000"/>
-		<Metadata name="CommonModule.QWEP_Клиент" id="616eac10-c7f8-440b-90b8-2a17252aacd5" configVersion="f9df08080cff9c47909bd9ea446db80500000000"/>
-		<Metadata name="CommonModule.QWEP_Клиент.Module" id="616eac10-c7f8-440b-90b8-2a17252aacd5.0" configVersion="998d0752437bc14e84d5c0a8e138e34700000000"/>
-		<Metadata name="CommonModule.QWEP_Сервер" id="e8399409-0e74-47fa-aae3-fe75a81b2a53" configVersion="54734efea78e204e8dc9c64dc498a99100000000"/>
-		<Metadata name="CommonModule.QWEP_Сервер.Module" id="e8399409-0e74-47fa-aae3-fe75a81b2a53.0" configVersion="8b29c8918458044691f7924d55798c9a00000000"/>
-		<Metadata name="Configuration.Конфигурация" id="2222b3d5-1afa-470e-8c9b-d9a59e8d667c" configVersion="210194adc0b1ca4faaaf6f202ded824200000000"/>
+		<Metadata name="CommonModule.QWEP_Клиент" id="616eac10-c7f8-440b-90b8-2a17252aacd5" configVersion="8c7434efe5b38f49aa5c8deb42f78c1c00000000"/>
+		<Metadata name="CommonModule.QWEP_Клиент.Module" id="616eac10-c7f8-440b-90b8-2a17252aacd5.0" configVersion="a84a13cb9267d4478b98df3597b1a88e00000000"/>
+		<Metadata name="CommonModule.QWEP_Сервер" id="e8399409-0e74-47fa-aae3-fe75a81b2a53" configVersion="172f4c4c2263504584258532e525e06200000000"/>
+		<Metadata name="CommonModule.QWEP_Сервер.Module" id="e8399409-0e74-47fa-aae3-fe75a81b2a53.0" configVersion="8695cc73d44c0f4c9d607bd8d80d5c9100000000"/>
+		<Metadata name="Configuration.Конфигурация" id="2222b3d5-1afa-470e-8c9b-d9a59e8d667c" configVersion="3faf052f67ddcf4ab612989b4db8084600000000"/>
 		<Metadata name="Configuration.Конфигурация.ClientApplicationInterface" id="c4f4fe70-07cf-4d3c-b8c4-56af5bf2b5da.b" configVersion="6b2273092c2b5842b09b713e9aa715e100000000"/>
 		<Metadata name="Configuration.Конфигурация.HomePageWorkArea" id="c4f4fe70-07cf-4d3c-b8c4-56af5bf2b5da.8" configVersion="8aeefda848fecd4e8c60eb899a7f2ded00000000"/>
+		<Metadata name="Configuration.Конфигурация.ManagedApplicationModule" id="c4f4fe70-07cf-4d3c-b8c4-56af5bf2b5da.6" configVersion="c63d0d3bf59f994381b75a59f7d8b0d200000000"/>
 		<Metadata name="Constant.QWEP_ФорматОбменаДанными" id="89932836-f7e5-4217-851f-bb29bb93b37c" configVersion="617cd2b57cd0cd4aa486233809a60feb00000000"/>
 		<Metadata name="InformationRegister.QWEP_AccessToken" id="16059093-59ae-4105-8932-a5101124da16" configVersion="3d86f7502d67204db968efe87afcc4e800000000">
 			<Metadata name="InformationRegister.QWEP_AccessToken.Attribute.type" id="6411a441-6e6f-4c58-8281-870a05c9624f"/>
@@ -80,8 +81,8 @@
 			<Metadata name="InformationRegister.QWEP_РезультатыПоиска.Resource.ЦенаЗначение" id="f66e82a2-8e74-4133-a46f-5c6aa1c01898"/>
 			<Metadata name="InformationRegister.QWEP_РезультатыПоиска.Resource.Состояние" id="f7ff566a-259e-4357-9923-6169cc33bf24"/>
 		</Metadata>
-		<Metadata name="InformationRegister.QWEP_РезультатыПоиска.Form.ФормаСписка" id="c04d2968-f79c-436c-b74c-4d4c1eb02b0d" configVersion="beb89525c5db7044931793009701258f00000000"/>
-		<Metadata name="InformationRegister.QWEP_РезультатыПоиска.Form.ФормаСписка.Form" id="c04d2968-f79c-436c-b74c-4d4c1eb02b0d.0" configVersion="912ae0c1bd792b498e006ba6d2cc6cb300000000"/>
+		<Metadata name="InformationRegister.QWEP_РезультатыПоиска.Form.ФормаСписка" id="c04d2968-f79c-436c-b74c-4d4c1eb02b0d" configVersion="ec6a74682100d346b77b9ab614e2c2b200000000"/>
+		<Metadata name="InformationRegister.QWEP_РезультатыПоиска.Form.ФормаСписка.Form" id="c04d2968-f79c-436c-b74c-4d4c1eb02b0d.0" configVersion="fc27eb3a88290b48895a7785a5a0a5d600000000"/>
 		<Metadata name="Language.Русский" id="6945906c-f816-4a7e-902e-d7dc7f720f11" configVersion="893149e4b06eff4e8ad0ad3335a6b2fa00000000"/>
 		<Metadata name="Role.QWEPПолныеПрава" id="427e9e2c-203f-4c1f-b426-cb1532b032a4" configVersion="6f83f62245d79a4ebf371af0207e0a2100000000"/>
 		<Metadata name="Role.QWEPПолныеПрава.Rights" id="427e9e2c-203f-4c1f-b426-cb1532b032a4.0" configVersion="56e058f95bed244d9a27dabd5d05178300000000"/>
