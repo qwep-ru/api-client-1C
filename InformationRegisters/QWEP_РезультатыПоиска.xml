@@ -1063,6 +1063,7 @@
 				</Properties>
 			</Dimension>
 			<Form>ФормаСписка</Form>
+			<Form>ВыборВариантаКороткогоАртикула</Form>
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>

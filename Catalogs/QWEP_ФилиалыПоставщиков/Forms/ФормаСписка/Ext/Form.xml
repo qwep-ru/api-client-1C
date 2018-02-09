@@ -1,20 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
-		<Autofill>false</Autofill>
-		<ChildItems>
-			<Button name="ФормаПолучитьAccessToken" id="31">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ПолучитьAccessToken</CommandName>
-				<ExtendedTooltip name="ФормаПолучитьAccessTokenРасширеннаяПодсказка" id="32"/>
-			</Button>
-			<Button name="ФормаИнформацияОПриложении" id="33">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ИнформацияОПриложении</CommandName>
-				<ExtendedTooltip name="ФормаИнформацияОПриложенииРасширеннаяПодсказка" id="34"/>
-			</Button>
-		</ChildItems>
-	</AutoCommandBar>
+	<CommandSet>
+		<ExcludedCommand>Change</ExcludedCommand>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>Create</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
 		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
 			<Title>
@@ -37,6 +30,16 @@
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>Список</DataPath>
 			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<CommandSet>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Choose</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Create</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+			</CommandSet>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>
@@ -80,32 +83,25 @@
 				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
 				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
 			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СписокВыбор</Event>
+			</Events>
 			<ChildItems>
-				<LabelField name="Период" id="16">
-					<DataPath>Список.Period</DataPath>
+				<LabelField name="Наименование" id="16">
+					<DataPath>Список.Description</DataPath>
 					<DefaultItem>true</DefaultItem>
-					<ContextMenu name="ПериодКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="18"/>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
 				</LabelField>
-				<LabelField name="authorizationCode" id="19">
-					<DataPath>Список.authorizationCode</DataPath>
-					<ContextMenu name="authorizationCodeКонтекстноеМеню" id="20"/>
-					<ExtendedTooltip name="authorizationCodeРасширеннаяПодсказка" id="21"/>
+				<LabelField name="Поставщик" id="22">
+					<DataPath>Список.Поставщик</DataPath>
+					<ContextMenu name="ПоставщикКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ПоставщикРасширеннаяПодсказка" id="24"/>
 				</LabelField>
-				<LabelField name="applicationNum" id="22">
-					<DataPath>Список.applicationNum</DataPath>
-					<ContextMenu name="applicationNumКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="applicationNumРасширеннаяПодсказка" id="24"/>
-				</LabelField>
-				<LabelField name="token" id="25">
-					<DataPath>Список.token</DataPath>
-					<ContextMenu name="tokenКонтекстноеМеню" id="26"/>
-					<ExtendedTooltip name="tokenРасширеннаяПодсказка" id="27"/>
-				</LabelField>
-				<LabelField name="type" id="28">
-					<DataPath>Список.type</DataPath>
-					<ContextMenu name="typeКонтекстноеМеню" id="29"/>
-					<ExtendedTooltip name="typeРасширеннаяПодсказка" id="30"/>
+				<LabelField name="Код" id="19">
+					<DataPath>Список.Code</DataPath>
+					<ContextMenu name="КодКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="21"/>
 				</LabelField>
 			</ChildItems>
 		</Table>
@@ -119,7 +115,7 @@
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>false</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
-				<MainTable>InformationRegister.QWEP_AccessToken</MainTable>
+				<MainTable>Catalog.QWEP_ФилиалыПоставщиков</MainTable>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
@@ -139,36 +135,4 @@
 			</Settings>
 		</Attribute>
 	</Attributes>
-	<Commands>
-		<Command name="ПолучитьAccessToken" id="1">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Получить Access token</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Получить access token</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ПолучитьAccessToken</Action>
-		</Command>
-		<Command name="ИнформацияОПриложении" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Информация о приложении</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Информация о приложении</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ИнформацияОПриложении</Action>
-		</Command>
-	</Commands>
 </Form>

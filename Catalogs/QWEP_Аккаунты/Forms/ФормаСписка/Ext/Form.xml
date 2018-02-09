@@ -1,12 +1,55 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<CommandSet>
+		<ExcludedCommand>Change</ExcludedCommand>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>Create</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+	</CommandSet>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 		<ChildItems>
 			<Button name="СписокПолучитьАккаунты" id="40">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ПолучитьАккаунты</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Получить аккаунты с сервера</v8:content>
+					</v8:item>
+				</Title>
 				<ExtendedTooltip name="СписокПолучитьАккаунтыРасширеннаяПодсказка" id="41"/>
+			</Button>
+			<Button name="ФормаДобавитьАккаунт" id="51">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.ДобавитьАккаунт</CommandName>
+				<ExtendedTooltip name="ФормаДобавитьАккаунтРасширеннаяПодсказка" id="52"/>
+			</Button>
+			<Button name="ФормаУдалитьАккаунт" id="53">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.УдалитьАккаунт</CommandName>
+				<ExtendedTooltip name="ФормаУдалитьАккаунтРасширеннаяПодсказка" id="54"/>
+			</Button>
+			<Button name="ФормаВключитьОтключить" id="55">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.ВключитьОтключить</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Включить/выключить</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаВключитьОтключитьРасширеннаяПодсказка" id="56"/>
+			</Button>
+			<Button name="ФормаИсторияПокупок" id="63">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ИсторияПокупок</CommandName>
+				<ExtendedTooltip name="ФормаИсторияПокупокРасширеннаяПодсказка" id="64"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -32,6 +75,14 @@
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>Список</DataPath>
 			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<CommandSet>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Choose</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Create</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+			</CommandSet>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>
@@ -46,7 +97,31 @@
 			<AllowRootChoice>false</AllowRootChoice>
 			<UpdateOnDataChange>Auto</UpdateOnDataChange>
 			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
-			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+			<ContextMenu name="СписокКонтекстноеМеню" id="4">
+				<ChildItems>
+					<Button name="СписокКонтекстноеМенюВключитьОтключить" id="57">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ВключитьОтключить</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Включить/выключить</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="СписокКонтекстноеМенюВключитьОтключитьРасширеннаяПодсказка" id="58"/>
+					</Button>
+					<Button name="СписокКонтекстноеМенюДобавитьАккаунт" id="61">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ДобавитьАккаунт</CommandName>
+						<ExtendedTooltip name="СписокКонтекстноеМенюДобавитьАккаунтРасширеннаяПодсказка" id="62"/>
+					</Button>
+					<Button name="СписокКонтекстноеМенюУдалитьАккаунт" id="59">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.УдалитьАккаунт</CommandName>
+						<ExtendedTooltip name="СписокКонтекстноеМенюУдалитьАккаунтРасширеннаяПодсказка" id="60"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
 			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
 				<Autofill>false</Autofill>
 			</AutoCommandBar>
@@ -82,12 +157,6 @@
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ВключенКонтекстноеМеню" id="43"/>
 					<ExtendedTooltip name="ВключенРасширеннаяПодсказка" id="44"/>
-				</CheckBoxField>
-				<CheckBoxField name="УчаствуетВПоиске" id="48">
-					<DataPath>Список.УчаствуетВПоиске</DataPath>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="УчаствуетВПоискеКонтекстноеМеню" id="49"/>
-					<ExtendedTooltip name="УчаствуетВПоискеРасширеннаяПодсказка" id="50"/>
 				</CheckBoxField>
 				<CheckBoxField name="Промо" id="45">
 					<DataPath>Список.Промо</DataPath>
@@ -183,7 +252,89 @@
 					<v8:content>Получить аккаунты</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Reread</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Action>ПолучитьАккаунты</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ДобавитьАккаунт" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить аккаунт</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить аккаунт</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДобавитьАккаунт</Action>
+		</Command>
+		<Command name="УдалитьАккаунт" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить аккаунт</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить аккаунт</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Clear</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УдалитьАккаунт</Action>
+		</Command>
+		<Command name="ВключитьОтключить" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить отключить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить отключить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SwitchActivity</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВключитьОтключить</Action>
+		</Command>
+		<Command name="ИсторияПокупок" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История покупок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История покупок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Catalog</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ИсторияПокупок</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 </Form>

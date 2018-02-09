@@ -136,6 +136,7 @@
 			<CommonModule>QWEP_Клиент</CommonModule>
 			<Constant>QWEP_ФорматОбменаДанными</Constant>
 			<CommonForm>QWEPКонстанты</CommonForm>
+			<CommonForm>QWEPИсторияПокупок</CommonForm>
 			<Catalog>QWEP_Аккаунты</Catalog>
 			<Catalog>QWEP_Поставщики</Catalog>
 			<Catalog>QWEP_ФилиалыПоставщиков</Catalog>
