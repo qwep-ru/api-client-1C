@@ -115,6 +115,13 @@
 					<ContextMenu name="РеквизитАсинхронныйЗапросКонтекстноеМеню" id="53"/>
 					<ExtendedTooltip name="РеквизитАсинхронныйЗапросРасширеннаяПодсказка" id="54"/>
 				</CheckBoxField>
+				<CheckBoxField name="РеквизитРаскрыватьВсеУточнения" id="109">
+					<DataPath>РеквизитРаскрыватьВсеУточнения</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="РеквизитРаскрыватьВсеУточненияКонтекстноеМеню" id="110"/>
+					<ExtendedTooltip name="РеквизитРаскрыватьВсеУточненияРасширеннаяПодсказка" id="111"/>
+				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
@@ -499,6 +506,20 @@
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</Type>
+		</Attribute>
+		<Attribute name="РеквизитРаскрыватьВсеУточнения" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Раскрывать уточнения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>РеквизитРаскрыватьВсеУточнения</Field>
+			</Save>
 		</Attribute>
 	</Attributes>
 	<Commands>

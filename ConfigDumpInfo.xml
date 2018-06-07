@@ -90,8 +90,8 @@
 		</Metadata>
 		<Metadata name="InformationRegister.QWEP_РезультатыПоиска.Form.ВыборВариантаКороткогоАртикула" id="d91c633e-1a58-4398-9c8c-c595ad98b2f6" configVersion="c97cca00d494e948a41811fab04b1d8200000000"/>
 		<Metadata name="InformationRegister.QWEP_РезультатыПоиска.Form.ВыборВариантаКороткогоАртикула.Form" id="d91c633e-1a58-4398-9c8c-c595ad98b2f6.0" configVersion="61af6fe483f30b4aa6d2c87dd269527000000000"/>
-		<Metadata name="InformationRegister.QWEP_РезультатыПоиска.Form.ФормаСписка" id="c04d2968-f79c-436c-b74c-4d4c1eb02b0d" configVersion="ee51e6c48ee8c245a6c4ac494eefa5a000000000"/>
-		<Metadata name="InformationRegister.QWEP_РезультатыПоиска.Form.ФормаСписка.Form" id="c04d2968-f79c-436c-b74c-4d4c1eb02b0d.0" configVersion="d9b7f02b3c624744a325de11f496e76f00000000"/>
+		<Metadata name="InformationRegister.QWEP_РезультатыПоиска.Form.ФормаСписка" id="c04d2968-f79c-436c-b74c-4d4c1eb02b0d" configVersion="82d4832199bc8f41b9152e0bb753848a00000000"/>
+		<Metadata name="InformationRegister.QWEP_РезультатыПоиска.Form.ФормаСписка.Form" id="c04d2968-f79c-436c-b74c-4d4c1eb02b0d.0" configVersion="2b97cc610a17c745adb40acd4b35a72600000000"/>
 		<Metadata name="Language.Русский" id="6945906c-f816-4a7e-902e-d7dc7f720f11" configVersion="b7d93a7b8a3df94a8e3b184662b94ed300000000"/>
 		<Metadata name="Role.QWEPПолныеПрава" id="427e9e2c-203f-4c1f-b426-cb1532b032a4" configVersion="40e2619771aea640973354928daf513200000000"/>
 		<Metadata name="Role.QWEPПолныеПрава.Rights" id="427e9e2c-203f-4c1f-b426-cb1532b032a4.0" configVersion="5fcc944a42b98744af0a224b5d9b027800000000"/>
