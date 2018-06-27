@@ -46,10 +46,10 @@
 		<Metadata name="CommonForm.QWEPИсторияПокупок.Form" id="148ea815-5d1a-401e-abd8-310ed7083fca.0" configVersion="6f089647ba1eb6429a7d89f3ca55389a00000000"/>
 		<Metadata name="CommonForm.QWEPКонстанты" id="51ebef3c-4eb6-4f5f-9315-b079fa47c5b2" configVersion="0c6524d90b7db148a1d85de24be9dfe600000000"/>
 		<Metadata name="CommonForm.QWEPКонстанты.Form" id="51ebef3c-4eb6-4f5f-9315-b079fa47c5b2.0" configVersion="b12f0ee8b4b9ec449a53b88acd3d554000000000"/>
-		<Metadata name="CommonModule.QWEP_Клиент" id="616eac10-c7f8-440b-90b8-2a17252aacd5" configVersion="67c04795d5f2d54eae3085b75c0a4f3500000000"/>
-		<Metadata name="CommonModule.QWEP_Клиент.Module" id="616eac10-c7f8-440b-90b8-2a17252aacd5.0" configVersion="13c29d92aadb8c49bf1fa4331510e42a00000000"/>
-		<Metadata name="CommonModule.QWEP_Сервер" id="e8399409-0e74-47fa-aae3-fe75a81b2a53" configVersion="b073662a354ce644970c788f7751f13500000000"/>
-		<Metadata name="CommonModule.QWEP_Сервер.Module" id="e8399409-0e74-47fa-aae3-fe75a81b2a53.0" configVersion="665d15abeb85714994da36133a0e9eea00000000"/>
+		<Metadata name="CommonModule.QWEP_Клиент" id="616eac10-c7f8-440b-90b8-2a17252aacd5" configVersion="9a2cdcff043b0e41b76d7dc9b4b5571b00000000"/>
+		<Metadata name="CommonModule.QWEP_Клиент.Module" id="616eac10-c7f8-440b-90b8-2a17252aacd5.0" configVersion="5f74a4b18f5c094f94b5066c718fcd9e00000000"/>
+		<Metadata name="CommonModule.QWEP_Сервер" id="e8399409-0e74-47fa-aae3-fe75a81b2a53" configVersion="074e947b763a9b46b0ce0d20c0f2f06f00000000"/>
+		<Metadata name="CommonModule.QWEP_Сервер.Module" id="e8399409-0e74-47fa-aae3-fe75a81b2a53.0" configVersion="622c3969cfbe4540b8bde5bab2c05b3900000000"/>
 		<Metadata name="Configuration.Конфигурация" id="2222b3d5-1afa-470e-8c9b-d9a59e8d667c" configVersion="5d259211933bb44aa194592d3f65e8db00000000"/>
 		<Metadata name="Configuration.Конфигурация.ClientApplicationInterface" id="c4f4fe70-07cf-4d3c-b8c4-56af5bf2b5da.b" configVersion="7c4dc99650e5094cb9c90a80e4ffce4000000000"/>
 		<Metadata name="Configuration.Конфигурация.HomePageWorkArea" id="c4f4fe70-07cf-4d3c-b8c4-56af5bf2b5da.8" configVersion="3b11e214affde246a7334b4fd765738c00000000"/>
