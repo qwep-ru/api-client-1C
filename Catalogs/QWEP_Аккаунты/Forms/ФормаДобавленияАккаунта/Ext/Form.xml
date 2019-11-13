@@ -1,13 +1,16 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<CommandBarLocation>None</CommandBarLocation>
 	<CommandSet>
-		<ExcludedCommand>Write</ExcludedCommand>
 		<ExcludedCommand>WriteAndClose</ExcludedCommand>
+		<ExcludedCommand>Write</ExcludedCommand>
 	</CommandSet>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
 	<ChildItems>
 		<CheckBoxField name="УчаствуетВПоиске" id="1">
 			<DataPath>1/0:842552b4-285b-4d44-8ea2-1b5aaf4336e6</DataPath>
@@ -104,20 +107,6 @@
 			<ContextMenu name="ПарольКонтекстноеМеню" id="24"/>
 			<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="25"/>
 		</InputField>
-		<CheckBoxField name="Включен" id="26">
-			<DataPath>Объект.Включен</DataPath>
-			<ReadOnly>true</ReadOnly>
-			<CheckBoxType>Auto</CheckBoxType>
-			<ContextMenu name="ВключенКонтекстноеМеню" id="27"/>
-			<ExtendedTooltip name="ВключенРасширеннаяПодсказка" id="28"/>
-		</CheckBoxField>
-		<CheckBoxField name="Промо" id="29">
-			<DataPath>Объект.Промо</DataPath>
-			<ReadOnly>true</ReadOnly>
-			<CheckBoxType>Auto</CheckBoxType>
-			<ContextMenu name="ПромоКонтекстноеМеню" id="30"/>
-			<ExtendedTooltip name="ПромоРасширеннаяПодсказка" id="31"/>
-		</CheckBoxField>
 		<InputField name="Код" id="32">
 			<DataPath>Объект.Code</DataPath>
 			<Visible>false</Visible>
@@ -137,6 +126,12 @@
 			<ContextMenu name="ДопПараметрыАвторизацииКонтекстноеМеню" id="39"/>
 			<ExtendedTooltip name="ДопПараметрыАвторизацииРасширеннаяПодсказка" id="40"/>
 		</InputField>
+		<CheckBoxField name="ПроверитьАвторизациюПередДобавлением" id="43">
+			<DataPath>ПроверитьАвторизациюПередДобавлением</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПроверитьАвторизациюПередДобавлениемКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="ПроверитьАвторизациюПередДобавлениемРасширеннаяПодсказка" id="45"/>
+		</CheckBoxField>
 		<Button name="Активировать" id="41">
 			<Type>UsualButton</Type>
 			<HorizontalStretch>true</HorizontalStretch>
@@ -150,6 +145,17 @@
 				<v8:Type>cfg:CatalogObject.QWEP_Аккаунты</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПроверитьАвторизациюПередДобавлением" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить авторизацию перед добавлением</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>

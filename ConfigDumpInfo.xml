@@ -1,34 +1,46 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.5">
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.4">
 	<ConfigVersions>
-		<Metadata name="Catalog.QWEP_Аккаунты" id="694d4fa6-3102-40b7-b391-b34d036907b1" configVersion="2fa35a811494b9488cda518a63b4189c00000000">
+		<Metadata name="Catalog.QWEP_Аккаунты" id="694d4fa6-3102-40b7-b391-b34d036907b1" configVersion="7a831691b3b89f4b81324dd882dad76f00000000">
 			<Metadata name="Catalog.QWEP_Аккаунты.Attribute.Включен" id="06e88c69-575c-48ad-a22a-7b4ba6282410"/>
 			<Metadata name="Catalog.QWEP_Аккаунты.Attribute.Логин" id="255ddaf1-afba-44d0-81d6-b64ce8f12e5e"/>
 			<Metadata name="Catalog.QWEP_Аккаунты.Attribute.Поставщик" id="27c60c46-c92b-4146-ba3b-825f4ef7d74f"/>
+			<Metadata name="Catalog.QWEP_Аккаунты.TabularSection.Корзина.Attribute.basketId" id="3b91421b-a557-46dc-823c-8df13ffe6a08"/>
+			<Metadata name="Catalog.QWEP_Аккаунты.TabularSection.Корзина.Attribute.title" id="48be2761-ce1e-4411-b1e2-7f4cad4ee961"/>
 			<Metadata name="Catalog.QWEP_Аккаунты.Attribute.ДопПараметрыАвторизации" id="4c8ae976-8f6b-48a7-92b2-fa32791b0e44"/>
 			<Metadata name="Catalog.QWEP_Аккаунты.Attribute.Пароль" id="4ccfe6e2-cf02-4cce-bcfd-0cecdb43cfa3"/>
+			<Metadata name="Catalog.QWEP_Аккаунты.TabularSection.Корзина.Attribute.available" id="74959817-5809-4ee8-ac8f-71d71258e291"/>
 			<Metadata name="Catalog.QWEP_Аккаунты.Attribute.Промо" id="8873bc3c-b4d8-4d09-bb84-319e926fd4b5"/>
 			<Metadata name="Catalog.QWEP_Аккаунты.Attribute.Филиал" id="9ff3ef34-88ed-4abf-b7a9-5836f91a10e2"/>
+			<Metadata name="Catalog.QWEP_Аккаунты.TabularSection.Корзина.Attribute.warehouse" id="bb4cd010-5476-44e7-bac3-9b439c98f8d0"/>
+			<Metadata name="Catalog.QWEP_Аккаунты.TabularSection.Корзина.Attribute.brand" id="bcab7633-72c3-4a6d-938f-b56b4206db10"/>
+			<Metadata name="Catalog.QWEP_Аккаунты.TabularSection.Корзина.Attribute.quantity" id="bfbc4e38-f1a3-4769-8a75-039ebdd9ba8f"/>
+			<Metadata name="Catalog.QWEP_Аккаунты.TabularSection.Корзина.Attribute.basketItemId" id="c1f3c1ad-a31b-433f-ab75-69f20720d98c"/>
+			<Metadata name="Catalog.QWEP_Аккаунты.TabularSection.Корзина.Attribute.priceTotal" id="c89fe539-149f-4ff1-b703-ab83bced1fd5"/>
+			<Metadata name="Catalog.QWEP_Аккаунты.TabularSection.Корзина.Attribute.price" id="ce9f8dfb-704e-48f5-ac66-b7e4efbc9489"/>
+			<Metadata name="Catalog.QWEP_Аккаунты.TabularSection.Корзина" id="d8c9393c-d21b-49c7-864d-7e35e402fba3"/>
+			<Metadata name="Catalog.QWEP_Аккаунты.TabularSection.Корзина.Attribute.article" id="fb5302b5-b6a8-4eb3-beac-6a47f00d37af"/>
 		</Metadata>
-		<Metadata name="Catalog.QWEP_Аккаунты.Form.ФормаДобавленияАккаунта" id="1739d25e-6914-4a49-bfaf-5ef443f46368" configVersion="7f098bca26926e41bb3b852c415131c200000000"/>
-		<Metadata name="Catalog.QWEP_Аккаунты.Form.ФормаДобавленияАккаунта.Form" id="1739d25e-6914-4a49-bfaf-5ef443f46368.0" configVersion="80f4c56accce3246b1533097476674c800000000"/>
-		<Metadata name="Catalog.QWEP_Аккаунты.Form.ФормаСписка" id="1205a5e2-7c4a-4ace-88da-947d8eb467fc" configVersion="5cf76ec51a679945a3f95b3f4650aad200000000"/>
-		<Metadata name="Catalog.QWEP_Аккаунты.Form.ФормаСписка.Form" id="1205a5e2-7c4a-4ace-88da-947d8eb467fc.0" configVersion="ac36999148f9d54b9c865e7a723fec7a00000000"/>
-		<Metadata name="Catalog.QWEP_Аккаунты.Form.ФормаЭлемента" id="e5486067-19b0-4cf4-af61-0ebeef39e218" configVersion="00bec04e0e41bb459b789ab9b7edfeae00000000"/>
-		<Metadata name="Catalog.QWEP_Аккаунты.Form.ФормаЭлемента.Form" id="e5486067-19b0-4cf4-af61-0ebeef39e218.0" configVersion="26fe03243617b142bfa061073396005c00000000"/>
+		<Metadata name="Catalog.QWEP_Аккаунты.Form.ФормаДобавленияАккаунта" id="1739d25e-6914-4a49-bfaf-5ef443f46368" configVersion="a7780a3eafcb954d8d2a2df59dc7404500000000"/>
+		<Metadata name="Catalog.QWEP_Аккаунты.Form.ФормаДобавленияАккаунта.Form" id="1739d25e-6914-4a49-bfaf-5ef443f46368.0" configVersion="a62de7dad46c384ea24068eee6da706a00000000"/>
+		<Metadata name="Catalog.QWEP_Аккаунты.Form.ФормаСписка" id="1205a5e2-7c4a-4ace-88da-947d8eb467fc" configVersion="6e63d4526a93fc4198133b86085755d100000000"/>
+		<Metadata name="Catalog.QWEP_Аккаунты.Form.ФормаСписка.Form" id="1205a5e2-7c4a-4ace-88da-947d8eb467fc.0" configVersion="b77bd699f3ed9849947875677a21041e00000000"/>
+		<Metadata name="Catalog.QWEP_Аккаунты.Form.ФормаЭлемента" id="e5486067-19b0-4cf4-af61-0ebeef39e218" configVersion="01e853aebcea7942b6003818d56c367900000000"/>
+		<Metadata name="Catalog.QWEP_Аккаунты.Form.ФормаЭлемента.Form" id="e5486067-19b0-4cf4-af61-0ebeef39e218.0" configVersion="7293e3e9a4b2c44ab4faf37ae1867ccb00000000"/>
 		<Metadata name="Catalog.QWEP_Города" id="737bf7ad-09a8-4708-a2c6-feaba52a0610" configVersion="2035b48f0e7a514b9f0f8cf40e27befd00000000">
 			<Metadata name="Catalog.QWEP_Города.Attribute.Регион" id="d9e3f7b6-4dc4-4ff1-8d29-42d62ed4412c"/>
 		</Metadata>
 		<Metadata name="Catalog.QWEP_Города.Form.ФормаСписка" id="de319f8e-5d16-4360-b255-e081d0855516" configVersion="483c457d8156d846bdff403968d6349f00000000"/>
 		<Metadata name="Catalog.QWEP_Города.Form.ФормаСписка.Form" id="de319f8e-5d16-4360-b255-e081d0855516.0" configVersion="8f603668cc094b4ca197a2530dd6405200000000"/>
-		<Metadata name="Catalog.QWEP_Поставщики" id="53791578-8732-44a7-b02d-d71b3cb14450" configVersion="fa21159e20d5bf46ab6a5d5e39e2816500000000">
+		<Metadata name="Catalog.QWEP_Поставщики" id="53791578-8732-44a7-b02d-d71b3cb14450" configVersion="57b22bcb5b7c654db73b682dfe03198c00000000">
 			<Metadata name="Catalog.QWEP_Поставщики.TabularSection.Города" id="3915f2b7-6de6-4373-8a40-c670b398d2f1"/>
 			<Metadata name="Catalog.QWEP_Поставщики.TabularSection.Города.Attribute.Город" id="45993831-82ed-48ff-ad26-080a74a11752"/>
 			<Metadata name="Catalog.QWEP_Поставщики.Attribute.Сайт" id="535f4f87-308d-4006-8487-5083d0d36d35"/>
 			<Metadata name="Catalog.QWEP_Поставщики.Attribute.ДопПараметрыАвторизации" id="5f289466-110e-464e-8526-e5bb6904c3e5"/>
+			<Metadata name="Catalog.QWEP_Поставщики.Attribute.singleSession" id="a4bf2ee1-623a-4312-a26b-916a9caeb675"/>
 		</Metadata>
-		<Metadata name="Catalog.QWEP_Поставщики.Form.ФормаСписка" id="b49c260e-eab8-457b-85c6-391315d65ebc" configVersion="ece9c5f9747f2540a8eb897016e9acc500000000"/>
-		<Metadata name="Catalog.QWEP_Поставщики.Form.ФормаСписка.Form" id="b49c260e-eab8-457b-85c6-391315d65ebc.0" configVersion="ecee3ee39ca5834690c8da1ebde5598400000000"/>
+		<Metadata name="Catalog.QWEP_Поставщики.Form.ФормаСписка" id="b49c260e-eab8-457b-85c6-391315d65ebc" configVersion="89e12da65253e64a98af56d873d31af300000000"/>
+		<Metadata name="Catalog.QWEP_Поставщики.Form.ФормаСписка.Form" id="b49c260e-eab8-457b-85c6-391315d65ebc.0" configVersion="df895645e61ddd4aa2003570d4e78e9800000000"/>
 		<Metadata name="Catalog.QWEP_Поставщики.Form.ФормаЭлемента" id="dc1a1970-0899-444c-a251-038cb78162d3" configVersion="b5fc9c1d91e6814f89007ba1c36eb7dc00000000"/>
 		<Metadata name="Catalog.QWEP_Поставщики.Form.ФормаЭлемента.Form" id="dc1a1970-0899-444c-a251-038cb78162d3.0" configVersion="67f6c5707199fb4faae0d7dc747d0ca200000000"/>
 		<Metadata name="Catalog.QWEP_Регионы" id="d281298c-4ab1-47c5-bacd-dc78829d6ddb" configVersion="4f556c93733a514b8e767042e6fa3e5200000000"/>
@@ -46,16 +58,16 @@
 		<Metadata name="CommonForm.QWEPИсторияПокупок.Form" id="148ea815-5d1a-401e-abd8-310ed7083fca.0" configVersion="6f089647ba1eb6429a7d89f3ca55389a00000000"/>
 		<Metadata name="CommonForm.QWEPКонстанты" id="51ebef3c-4eb6-4f5f-9315-b079fa47c5b2" configVersion="0c6524d90b7db148a1d85de24be9dfe600000000"/>
 		<Metadata name="CommonForm.QWEPКонстанты.Form" id="51ebef3c-4eb6-4f5f-9315-b079fa47c5b2.0" configVersion="b12f0ee8b4b9ec449a53b88acd3d554000000000"/>
-		<Metadata name="CommonModule.QWEP_Клиент" id="616eac10-c7f8-440b-90b8-2a17252aacd5" configVersion="9a2cdcff043b0e41b76d7dc9b4b5571b00000000"/>
-		<Metadata name="CommonModule.QWEP_Клиент.Module" id="616eac10-c7f8-440b-90b8-2a17252aacd5.0" configVersion="5f74a4b18f5c094f94b5066c718fcd9e00000000"/>
-		<Metadata name="CommonModule.QWEP_Сервер" id="e8399409-0e74-47fa-aae3-fe75a81b2a53" configVersion="074e947b763a9b46b0ce0d20c0f2f06f00000000"/>
-		<Metadata name="CommonModule.QWEP_Сервер.Module" id="e8399409-0e74-47fa-aae3-fe75a81b2a53.0" configVersion="622c3969cfbe4540b8bde5bab2c05b3900000000"/>
-		<Metadata name="Configuration.Конфигурация" id="2222b3d5-1afa-470e-8c9b-d9a59e8d667c" configVersion="5d259211933bb44aa194592d3f65e8db00000000"/>
-		<Metadata name="Configuration.Конфигурация.ClientApplicationInterface" id="c4f4fe70-07cf-4d3c-b8c4-56af5bf2b5da.b" configVersion="7c4dc99650e5094cb9c90a80e4ffce4000000000"/>
-		<Metadata name="Configuration.Конфигурация.HomePageWorkArea" id="c4f4fe70-07cf-4d3c-b8c4-56af5bf2b5da.8" configVersion="3b11e214affde246a7334b4fd765738c00000000"/>
-		<Metadata name="Configuration.Конфигурация.ManagedApplicationModule" id="c4f4fe70-07cf-4d3c-b8c4-56af5bf2b5da.6" configVersion="067dd06c25c85c4aa252751b192b7e8000000000"/>
+		<Metadata name="CommonModule.QWEP_Клиент" id="616eac10-c7f8-440b-90b8-2a17252aacd5" configVersion="02d21f431e2bbf48a110a695a734eb4a00000000"/>
+		<Metadata name="CommonModule.QWEP_Клиент.Module" id="616eac10-c7f8-440b-90b8-2a17252aacd5.0" configVersion="1bab432901f17f48994ee560467d3c5200000000"/>
+		<Metadata name="CommonModule.QWEP_Сервер" id="e8399409-0e74-47fa-aae3-fe75a81b2a53" configVersion="3b0b9ce98f10fe4180f88943ae5f658300000000"/>
+		<Metadata name="CommonModule.QWEP_Сервер.Module" id="e8399409-0e74-47fa-aae3-fe75a81b2a53.0" configVersion="ddcd91e9fc3af445bae4c137d8c8944100000000"/>
+		<Metadata name="Configuration.USERAPIQWEP" id="2222b3d5-1afa-470e-8c9b-d9a59e8d667c" configVersion="a4009aa9f0029f45a40c53c3c97925ac00000000"/>
+		<Metadata name="Configuration.USERAPIQWEP.ClientApplicationInterface" id="c4f4fe70-07cf-4d3c-b8c4-56af5bf2b5da.b" configVersion="7c4dc99650e5094cb9c90a80e4ffce4000000000"/>
+		<Metadata name="Configuration.USERAPIQWEP.HomePageWorkArea" id="c4f4fe70-07cf-4d3c-b8c4-56af5bf2b5da.8" configVersion="544cae45a00a3547b0f3ddf4ea00fe6b00000000"/>
+		<Metadata name="Configuration.USERAPIQWEP.ManagedApplicationModule" id="c4f4fe70-07cf-4d3c-b8c4-56af5bf2b5da.6" configVersion="067dd06c25c85c4aa252751b192b7e8000000000"/>
 		<Metadata name="Constant.QWEP_ФорматОбменаДанными" id="89932836-f7e5-4217-851f-bb29bb93b37c" configVersion="c21097521fc52644a268a179c0fe073400000000"/>
-		<Metadata name="InformationRegister.QWEP_AccessToken" id="16059093-59ae-4105-8932-a5101124da16" configVersion="97e51290c40d30408ec0c9bf8d577aa500000000">
+		<Metadata name="InformationRegister.QWEP_AccessToken" id="16059093-59ae-4105-8932-a5101124da16" configVersion="be8db248e899974781f81cd5d40913e800000000">
 			<Metadata name="InformationRegister.QWEP_AccessToken.Attribute.type" id="6411a441-6e6f-4c58-8281-870a05c9624f"/>
 			<Metadata name="InformationRegister.QWEP_AccessToken.Attribute.token" id="6ea5ba62-e6c1-430e-91af-2aaceb7008a0"/>
 			<Metadata name="InformationRegister.QWEP_AccessToken.Attribute.applicationNum" id="b051c3a2-ab1f-4a54-b67b-6a4d421f5046"/>
@@ -63,6 +75,21 @@
 		</Metadata>
 		<Metadata name="InformationRegister.QWEP_AccessToken.Form.ФормаСписка" id="c301e259-4209-4401-8d8a-0b96fc05fa11" configVersion="3c09ac06b34f3049912c7d60907e378900000000"/>
 		<Metadata name="InformationRegister.QWEP_AccessToken.Form.ФормаСписка.Form" id="c301e259-4209-4401-8d8a-0b96fc05fa11.0" configVersion="62c218090c11f84998c27d4c02d83ff400000000"/>
+		<Metadata name="InformationRegister.QWEP_ИсторияЗаказов" id="a10fbda1-1c39-4b4d-ae31-58c4533d7364" configVersion="3713a35c631b3d4db506174ab0d840f000000000">
+			<Metadata name="InformationRegister.QWEP_ИсторияЗаказов.Resource.НомерДатаЗаказа" id="1192448f-23da-4225-87a5-13e688fa6f3a"/>
+			<Metadata name="InformationRegister.QWEP_ИсторияЗаказов.Resource.Количество" id="159423bf-4747-4c8d-8abb-6805b422d234"/>
+			<Metadata name="InformationRegister.QWEP_ИсторияЗаказов.Resource.Склад" id="19363162-e32e-47be-841e-170957a326ba"/>
+			<Metadata name="InformationRegister.QWEP_ИсторияЗаказов.Resource.Комментарий" id="2bd06e9f-e0de-4655-be67-012458dfa120"/>
+			<Metadata name="InformationRegister.QWEP_ИсторияЗаказов.Resource.Наименование" id="387552bf-01ec-4777-9062-38a7d6f0d384"/>
+			<Metadata name="InformationRegister.QWEP_ИсторияЗаказов.Resource.Бренд" id="4cb4fcdf-f7a9-4224-9889-f6f7a6efeab4"/>
+			<Metadata name="InformationRegister.QWEP_ИсторияЗаказов.Resource.Цена" id="96434d73-6ed0-4a9c-b2c7-3d554613f784"/>
+			<Metadata name="InformationRegister.QWEP_ИсторияЗаказов.Resource.КомментарийЗаказа" id="9db20f86-66d0-4584-9172-60d59b4b1dd4"/>
+			<Metadata name="InformationRegister.QWEP_ИсторияЗаказов.Dimension.УникальныйИдентификатор" id="ac5912be-976b-46f2-ab79-7912d73b6639"/>
+			<Metadata name="InformationRegister.QWEP_ИсторияЗаказов.Resource.Артикул" id="ba4e322d-ad2e-4513-b347-74c3784c5c3e"/>
+			<Metadata name="InformationRegister.QWEP_ИсторияЗаказов.Resource.Статус" id="f4ea3ffd-a122-4e71-8620-43cb8c7e5645"/>
+		</Metadata>
+		<Metadata name="InformationRegister.QWEP_ИсторияЗаказов.Form.ФормаСписка" id="39b9366d-8485-4f98-b858-e0f8067697b4" configVersion="66b12f84f101994aa014aedce776c57700000000"/>
+		<Metadata name="InformationRegister.QWEP_ИсторияЗаказов.Form.ФормаСписка.Form" id="39b9366d-8485-4f98-b858-e0f8067697b4.0" configVersion="2e1d674fd000b942bc36bc9f7e70789c00000000"/>
 		<Metadata name="InformationRegister.QWEP_РезультатыПоиска" id="241a7b99-c60d-4e71-8e27-b79e4645b6f5" configVersion="fc0d1f6e120c214f8127478a5017db9400000000">
 			<Metadata name="InformationRegister.QWEP_РезультатыПоиска.Resource.НаличиеФормат" id="0bfb116e-6bfa-44e8-9fee-b0f90205289a"/>
 			<Metadata name="InformationRegister.QWEP_РезультатыПоиска.Resource.АртикулПоставщика" id="1669d336-01f8-47f1-ab31-277c48917397"/>
@@ -90,8 +117,8 @@
 		</Metadata>
 		<Metadata name="InformationRegister.QWEP_РезультатыПоиска.Form.ВыборВариантаКороткогоАртикула" id="d91c633e-1a58-4398-9c8c-c595ad98b2f6" configVersion="c97cca00d494e948a41811fab04b1d8200000000"/>
 		<Metadata name="InformationRegister.QWEP_РезультатыПоиска.Form.ВыборВариантаКороткогоАртикула.Form" id="d91c633e-1a58-4398-9c8c-c595ad98b2f6.0" configVersion="61af6fe483f30b4aa6d2c87dd269527000000000"/>
-		<Metadata name="InformationRegister.QWEP_РезультатыПоиска.Form.ФормаСписка" id="c04d2968-f79c-436c-b74c-4d4c1eb02b0d" configVersion="82d4832199bc8f41b9152e0bb753848a00000000"/>
-		<Metadata name="InformationRegister.QWEP_РезультатыПоиска.Form.ФормаСписка.Form" id="c04d2968-f79c-436c-b74c-4d4c1eb02b0d.0" configVersion="2b97cc610a17c745adb40acd4b35a72600000000"/>
+		<Metadata name="InformationRegister.QWEP_РезультатыПоиска.Form.ФормаСписка" id="c04d2968-f79c-436c-b74c-4d4c1eb02b0d" configVersion="087b1f0e1b084a44b7bcb7d47ffa639b00000000"/>
+		<Metadata name="InformationRegister.QWEP_РезультатыПоиска.Form.ФормаСписка.Form" id="c04d2968-f79c-436c-b74c-4d4c1eb02b0d.0" configVersion="664d8a32bcf17f4ebc0650c3de8907c400000000"/>
 		<Metadata name="Language.Русский" id="6945906c-f816-4a7e-902e-d7dc7f720f11" configVersion="b7d93a7b8a3df94a8e3b184662b94ed300000000"/>
 		<Metadata name="Role.QWEPПолныеПрава" id="427e9e2c-203f-4c1f-b426-cb1532b032a4" configVersion="40e2619771aea640973354928daf513200000000"/>
 		<Metadata name="Role.QWEPПолныеПрава.Rights" id="427e9e2c-203f-4c1f-b426-cb1532b032a4.0" configVersion="5fcc944a42b98744af0a224b5d9b027800000000"/>

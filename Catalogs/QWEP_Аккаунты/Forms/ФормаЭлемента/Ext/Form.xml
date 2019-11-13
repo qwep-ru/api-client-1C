@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<CommandSet>
-		<ExcludedCommand>Copy</ExcludedCommand>
 		<ExcludedCommand>CustomizeForm</ExcludedCommand>
-		<ExcludedCommand>Delete</ExcludedCommand>
 		<ExcludedCommand>Reread</ExcludedCommand>
-		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
-		<ExcludedCommand>Write</ExcludedCommand>
 		<ExcludedCommand>WriteAndClose</ExcludedCommand>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+		<ExcludedCommand>Write</ExcludedCommand>
 	</CommandSet>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
@@ -145,6 +145,140 @@
 			<ContextMenu name="ДопПараметрыАвторизацииКонтекстноеМеню" id="23"/>
 			<ExtendedTooltip name="ДопПараметрыАвторизацииРасширеннаяПодсказка" id="24"/>
 		</InputField>
+		<Button name="ОбновитьКорзину" id="48">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ОбновитьКорзину</CommandName>
+			<ExtendedTooltip name="ОбновитьКорзинуРасширеннаяПодсказка" id="49"/>
+		</Button>
+		<InputField name="ТекущаяКорзина" id="93">
+			<DataPath>ТекущаяКорзина</DataPath>
+			<DropListButton>true</DropListButton>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ContextMenu name="ТекущаяКорзинаКонтекстноеМеню" id="94"/>
+			<ExtendedTooltip name="ТекущаяКорзинаРасширеннаяПодсказка" id="95"/>
+		</InputField>
+		<Table name="Корзина" id="50">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Корзина</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="КорзинаКонтекстноеМеню" id="51">
+				<ChildItems>
+					<Button name="КорзинаКонтекстноеМенюУдалитьСтрокуКорзины" id="101">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.УдалитьСтрокуКорзины</CommandName>
+						<ExtendedTooltip name="КорзинаКонтекстноеМенюУдалитьСтрокуКорзиныРасширеннаяПодсказка" id="102"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="КорзинаКоманднаяПанель" id="52">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="КорзинаОчиститьКорзину" id="99">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОчиститьКорзину</CommandName>
+						<ExtendedTooltip name="КорзинаОчиститьКорзинуРасширеннаяПодсказка" id="100"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="КорзинаРасширеннаяПодсказка" id="53"/>
+			<SearchStringAddition name="КорзинаСтрокаПоиска" id="54">
+				<AdditionSource>
+					<Item>Корзина</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КорзинаСтрокаПоискаКонтекстноеМеню" id="55"/>
+				<ExtendedTooltip name="КорзинаСтрокаПоискаРасширеннаяПодсказка" id="56"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="КорзинаСостояниеПросмотра" id="57">
+				<AdditionSource>
+					<Item>Корзина</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КорзинаСостояниеПросмотраКонтекстноеМеню" id="58"/>
+				<ExtendedTooltip name="КорзинаСостояниеПросмотраРасширеннаяПодсказка" id="59"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="КорзинаУправлениеПоиском" id="60">
+				<AdditionSource>
+					<Item>Корзина</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="КорзинаУправлениеПоискомКонтекстноеМеню" id="61"/>
+				<ExtendedTooltip name="КорзинаУправлениеПоискомРасширеннаяПодсказка" id="62"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="КорзинаНомерСтроки" id="63">
+					<DataPath>Объект.Корзина.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КорзинаНомерСтрокиКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="КорзинаНомерСтрокиРасширеннаяПодсказка" id="65"/>
+				</LabelField>
+				<InputField name="КорзинаbasketId" id="96">
+					<DataPath>Объект.Корзина.basketId</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КорзинаbasketIdКонтекстноеМеню" id="97"/>
+					<ExtendedTooltip name="КорзинаbasketIdРасширеннаяПодсказка" id="98"/>
+				</InputField>
+				<InputField name="КорзинаbasketItemId" id="66">
+					<DataPath>Объект.Корзина.basketItemId</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КорзинаbasketItemIdКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="КорзинаbasketItemIdРасширеннаяПодсказка" id="68"/>
+				</InputField>
+				<InputField name="Корзинаarticle" id="69">
+					<DataPath>Объект.Корзина.article</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КорзинаarticleКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="КорзинаarticleРасширеннаяПодсказка" id="71"/>
+				</InputField>
+				<InputField name="Корзинаavailable" id="72">
+					<DataPath>Объект.Корзина.available</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КорзинаavailableКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="КорзинаavailableРасширеннаяПодсказка" id="74"/>
+				</InputField>
+				<InputField name="Корзинаbrand" id="75">
+					<DataPath>Объект.Корзина.brand</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КорзинаbrandКонтекстноеМеню" id="76"/>
+					<ExtendedTooltip name="КорзинаbrandРасширеннаяПодсказка" id="77"/>
+				</InputField>
+				<InputField name="Корзинаtitle" id="78">
+					<DataPath>Объект.Корзина.title</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КорзинаtitleКонтекстноеМеню" id="79"/>
+					<ExtendedTooltip name="КорзинаtitleРасширеннаяПодсказка" id="80"/>
+				</InputField>
+				<InputField name="Корзинаprice" id="81">
+					<DataPath>Объект.Корзина.price</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КорзинаpriceКонтекстноеМеню" id="82"/>
+					<ExtendedTooltip name="КорзинаpriceРасширеннаяПодсказка" id="83"/>
+				</InputField>
+				<InputField name="Корзинаquantity" id="84">
+					<DataPath>Объект.Корзина.quantity</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КорзинаquantityКонтекстноеМеню" id="85"/>
+					<ExtendedTooltip name="КорзинаquantityРасширеннаяПодсказка" id="86"/>
+					<Events>
+						<Event name="OnChange">КорзинаquantityПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="КорзинаpriceTotal" id="87">
+					<DataPath>Объект.Корзина.priceTotal</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КорзинаpriceTotalКонтекстноеМеню" id="88"/>
+					<ExtendedTooltip name="КорзинаpriceTotalРасширеннаяПодсказка" id="89"/>
+				</InputField>
+				<InputField name="Корзинаwarehouse" id="90">
+					<DataPath>Объект.Корзина.warehouse</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КорзинаwarehouseКонтекстноеМеню" id="91"/>
+					<ExtendedTooltip name="КорзинаwarehouseРасширеннаяПодсказка" id="92"/>
+				</InputField>
+			</ChildItems>
+		</Table>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -159,6 +293,21 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Это новый</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущаяКорзина" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая корзина</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -185,6 +334,56 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Активировать</Action>
+		</Command>
+		<Command name="ОбновитьКорзину" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить корзины</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить корзину</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьКорзину</Action>
+		</Command>
+		<Command name="ОчиститьКорзину" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить корзину</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить корзину</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Delete</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОчиститьКорзину</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="УдалитьСтрокуКорзины" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить строку корзины</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить строку корзины</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьСтрокуКорзины</Action>
 		</Command>
 	</Commands>
 </Form>
